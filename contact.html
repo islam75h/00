@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta property="og:title" content="وظائف عسكرية – حكومية | إنجاز معاملاتك باحترافية">
+    <meta property="og:description" content="نقدم لك حلولاً سريعة وموثوقة لإنجاز كافة معاملاتك العسكرية والحكومية في المملكة.">
+    <meta property="og:image" content="https://abuzaiddesignerix-maker.github.io/00/banner.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://abuzaiddesignerix-maker.github.io/00/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="وظائف عسكرية – حكومية">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا وتقديم طلب</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="شعار الموقع" class="logo-img">
+            <span class="site-title">وظائف عسكرية – حكومية</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="services.html">الخدمات</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="contact-header-section" id="social-links">
+    <h1 class="section-title">تواصل معنا عبر</h1>
+    
+    <div class="contact-header-grid">
+        
+        <a href="https://wa.me/966581926365" target="_blank" class="contact-box whatsapp-box">
+            <div class="icon-wrapper">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="box-details">
+                <h3>واتساب</h3>
+                <span class="user-handle">0581926365</span>
+            </div>
+        </a>
+
+        <a href="https://www.tiktok.com/@qtq54_" target="_blank" class="contact-box tiktok-box">
+            <div class="icon-wrapper">
+                <i class="fab fa-tiktok"></i>
+            </div>
+            <div class="box-details">
+                <h3>TikTok 1</h3>
+                <span class="user-handle">@qtq54_</span>
+            </div>
+        </a>
+
+        <a href="https://www.tiktok.com/@ddra1232" target="_blank" class="contact-box tiktok-box">
+            <div class="icon-wrapper">
+                <i class="fab fa-tiktok"></i>
+            </div>
+            <div class="box-details">
+                <h3>TikTok 2</h3>
+                <span class="user-handle">@ddra1232</span>
+            </div>
+        </a>
+
+    </div>
+</section>
+    
+</div>
+
+<section class="order-section" id="request">
+        <h2 class="section-title">نموذج تقديم طلب خدمة</h2>
+        <div class="form-container">
+            <form id="orderForm">
+                
+                <div class="form-group">
+                    <label>الاسم الكامل:</label>
+                    <input type="text" id="fullName" placeholder="الاسم الثلاثي" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>رقم الجوال:</label>
+                    <input type="tel" id="phone" placeholder="05xxxxxxxx" required>
+                </div>
+
+                <div class="form-group">
+                    <label>البريد الإلكتروني (اختياري):</label>
+                    <input type="email" id="email" placeholder="example@mail.com">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group third">
+                        <label>العمر:</label>
+                        <input type="number" id="age" placeholder="21">
+                    </div>
+                    <div class="form-group third">
+                        <label>الوزن (كجم):</label>
+                        <input type="number" id="weight" placeholder="70">
+                    </div>
+                    <div class="form-group third">
+                        <label>الطول (سم):</label>
+                        <input type="number" id="height" placeholder="170">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label>المنطقة:</label>
+                        <input type="text" id="region" placeholder="الرياض">
+                    </div>
+                    <div class="form-group half">
+                        <label>القطاع:</label>
+                        <input type="text" id="sector" placeholder="الأمن العام">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label>القدرات:</label>
+                        <input type="text" id="qudurat" placeholder="الدرجة">
+                    </div>
+                    <div class="form-group half">
+                        <label>المعدل:</label>
+                        <input type="text" id="gpa" placeholder="المعدل">
+                    </div>
+                </div>
+
+   <div class="form-group box-style">
+                    <label>هل قمت بالتقديم مسبقاً؟ <span style="color:red">*</span></label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="applied" value="نعم" onchange="toggleAppNumber(true)"> نعم
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="applied" value="لا" onchange="toggleAppNumber(false)"> لا
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group" id="appNumberContainer" style="display: none; background-color: #fff3cd; padding: 10px; border-radius: 5px;">
+                    <label style="color: #856404;">رقم الطلب (مهم):</label>
+                    <input type="text" id="appNumber" placeholder="اكتب رقم الطلب هنا">
+                </div>
+
+                <div class="form-group box-style">
+                    <label>نوع الخدمة المطلوبة:</label>
+                    <label class="check-box-item">
+                        <input type="radio" name="serviceType" value="تعديل حالة الطلب الى قبول مبدئي">
+                        تعديل حالة الطلب الى قبول مبدئي
+                    </label>
+                    <label class="check-box-item">
+                        <input type="radio" name="serviceType" value="تعديل حالة الطلب الى قبول مبدئي ونهائي">
+                        تعديل حالة الطلب الى قبول مبدئي ونهائي
+                    </label>
+                </div>
+
+              <div class="form-group box-style">
+                    <label>هل تريد إضافة بيانات أخرى تفصيلية؟ <span style="color:red">*</span></label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="extraData" value="نعم" onchange="toggleExtraData(true)"> نعم
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="extraData" value="لا" onchange="toggleExtraData(false)"> لا
+                        </label>
+                    </div>
+                </div>
+
+                <div id="extraDataContainer" style="display: none; border-top: 2px dashed #ccc; padding-top: 20px; margin-top: 10px;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 15px; font-size: 1.1rem;">📝 البيانات الإضافية:</h3>
+
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label>رقم الهوية:</label>
+                            <input type="number" id="idNumber" placeholder="رقم الهوية الوطنية">
+                        </div>
+                        <div class="form-group half">
+                            <label>رقم هوية الأب:</label>
+                            <input type="number" id="fatherId" placeholder="رقم هوية الأب">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label>تاريخ الميلاد:</label>
+                            
+                            <div class="radio-group" style="margin-bottom: 10px; gap: 15px;">
+                                <label class="radio-label" style="font-size: 0.9rem;">
+                                    <input type="radio" name="dateType" value="ميلادي" checked onchange="toggleDateType('miladi')"> ميلادي
+                                </label>
+                                <label class="radio-label" style="font-size: 0.9rem;">
+                                    <input type="radio" name="dateType" value="هجري" onchange="toggleDateType('hijri')"> هجري
+                                </label>
+                            </div>
+
+                            <input type="date" id="dobMiladi" class="date-fix" data-placeholder="يوم / شهر / سنة">
+                            
+                            <div id="dobHijriContainer" style="display: none; gap: 5px;">
+                                <select id="hDay" style="width: 30%;">
+                                    <option value="">اليوم</option>
+                                </select>
+                                <select id="hMonth" style="width: 35%;">
+                                    <option value="">الشهر</option>
+                                    <option value="1">محرم</option>
+                                    <option value="2">صفر</option>
+                                    <option value="3">ربيع الأول</option>
+                                    <option value="4">ربيع الثاني</option>
+                                    <option value="5">جمادى الأولى</option>
+                                    <option value="6">جمادى الآخرة</option>
+                                    <option value="7">رجب</option>
+                                    <option value="8">شعبان</option>
+                                    <option value="9">رمضان</option>
+                                    <option value="10">شوال</option>
+                                    <option value="11">ذو القعدة</option>
+                                    <option value="12">ذو الحجة</option>
+                                </select>
+                                <select id="hYear" style="width: 35%;">
+                                    <option value="">السنة</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group half">
+                            <label>الحالة الاجتماعية:</label>
+                            <select id="maritalStatus">
+                                <option value="أعزب">أعزب</option>
+                                <option value="متزوج">متزوج</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group third">
+                            <label>اسم الحي:</label>
+                            <input type="text" id="district" placeholder="الحي">
+                        </div>
+                        <div class="form-group third">
+                            <label>الشارع:</label>
+                            <input type="text" id="street" placeholder="الشارع">
+                        </div>
+                        <div class="form-group third">
+                            <label>رقم المبنى:</label>
+                            <input type="text" id="buildingNo" placeholder="المبنى">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label>منطقة السكن:</label>
+                            <input type="text" id="residencePlace" placeholder="أين تسكن حالياً">
+                        </div>
+                        <div class="form-group half">
+                            <label>منطقة النشأة:</label>
+                            <input type="text" id="originPlace" placeholder="أين نشأت">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label>القبيلة أو العائلة:</label>
+                            <input type="text" id="tribe" placeholder="اسم القبيلة/العائلة">
+                        </div>
+                        <div class="form-group half">
+                            <label>فصيلة الدم:</label>
+                            <select id="bloodType">
+                                <option value="">اختر...</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>اسم أحد الأقرباء:</label>
+                        <input type="text" id="relativeName" placeholder="للطوارئ">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>ملاحظات إضافية:</label>
+                    <textarea id="notes" placeholder="اكتب أي تفاصيل هنا..."></textarea>
+                </div>
+
+                <button type="button" onclick="sendToWhatsapp()" class="submit-btn">
+                    <i class="fab fa-whatsapp"></i> تقديم الطلب (واتساب)
+                </button>
+
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>وظائف عسكرية – حكومية</h3>
+                <p>شريكك الموثوق في المملكة لتقديم خدمات التقديم، المتابعة، وتعديل الحالات لجميع القطاعات العسكرية والحكومية بدقة وسرية تامة.</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط تهمك</h4>
+                <ul>
+                    <li><a href="index.html">» الرئيسية</a></li>
+                    <li><a href="services.html">» كافة الخدمات</a></li>
+                    <li><a href="contact.html">» تقديم طلب</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>تابعنا وتواصل معنا</h4>
+                <div class="footer-social-icons">
+                    <a href="https://wa.me/966581926365" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@qtq54_" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.tiktok.com/@ddra1232" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <p class="contact-number"><i class="fas fa-phone-alt"></i> 0581926365</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة © 2025 | وظائف عسكرية – حكومية</p>
+        </div>
+    </footer>
+
+<script>
+        // تعبئة القوائم الهجرية
+        document.addEventListener('DOMContentLoaded', function() {
+            var daySelect = document.getElementById('hDay');
+            var yearSelect = document.getElementById('hYear');
+            for (var i = 1; i <= 30; i++) {
+                var option = document.createElement('option');
+                option.value = i; option.text = i; daySelect.appendChild(option);
+            }
+            for (var i = 1400; i <= 1435; i++) {
+                var option = document.createElement('option');
+                option.value = i; option.text = i; yearSelect.appendChild(option);
+            }
+        });
+
+        // دوال الإظهار والإخفاء
+        function toggleAppNumber(show) {
+            var container = document.getElementById('appNumberContainer');
+            container.style.display = show ? 'block' : 'none';
+            if(!show) document.getElementById('appNumber').value = "";
+        }
+
+        function toggleExtraData(show) {
+            var container = document.getElementById('extraDataContainer');
+            container.style.display = show ? 'block' : 'none';
+        }
+
+        function toggleDateType(type) {
+            var miladiInput = document.getElementById('dobMiladi');
+            var hijriContainer = document.getElementById('dobHijriContainer');
+            if (type === 'miladi') {
+                miladiInput.style.display = 'block';
+                hijriContainer.style.display = 'none';
+                document.getElementById('hDay').value = "";
+                document.getElementById('hMonth').value = "";
+                document.getElementById('hYear').value = "";
+            } else {
+                miladiInput.style.display = 'none';
+                hijriContainer.style.display = 'flex';
+                miladiInput.value = "";
+            }
+        }
+
+        function sendToWhatsapp() {
+            // 1. تنظيف الأخطاء السابقة
+            var inputs = document.querySelectorAll('input, select');
+            inputs.forEach(function(input) { input.classList.remove('input-error'); });
+
+            // 2. التحقق الأساسي
+            var name = document.getElementById("fullName").value;
+            var phone = document.getElementById("phone").value;
+            
+            if (name === "" || phone === "") {
+                alert("يرجى كتابة الاسم ورقم الجوال");
+                if(name === "") document.getElementById("fullName").classList.add('input-error');
+                if(phone === "") document.getElementById("phone").classList.add('input-error');
+                return;
+            }
+
+            // 3. التحقق من اختيار (هل قدمت مسبقاً؟) - جديد 🔴
+            var appliedEl = document.querySelector('input[name="applied"]:checked');
+            if (!appliedEl) {
+                alert("يرجى اختيار ما إذا قمت بالتقديم مسبقاً أم لا.");
+                return; // يوقف الإرسال
+            }
+            var applied = appliedEl.value;
+
+            // 4. التحقق من اختيار (بيانات إضافية؟) - جديد 🔴
+            var extraDataEl = document.querySelector('input[name="extraData"]:checked');
+            if (!extraDataEl) {
+                alert("يرجى اختيار ما إذا كنت تريد إضافة بيانات تفصيلية أم لا.");
+                return; // يوقف الإرسال
+            }
+            var wantExtra = extraDataEl.value;
+
+            var extraMessage = "";
+            if (wantExtra === "نعم") {
+                var idInput = document.getElementById("idNumber");
+                var fatherInput = document.getElementById("fatherId");
+                
+                // شرط رقم الهوية
+                if (idInput.value !== "") {
+                    if (idInput.value.charAt(0) !== "1" || idInput.value.length !== 10) {
+                        alert("⚠️ خطأ في رقم الهوية:\nيجب أن يبدأ بالرقم 1 ويتكون من 10 أرقام.");
+                        idInput.classList.add('input-error');
+                        idInput.focus();
+                        return;
+                    }
+                }
+                // شرط رقم هوية الأب
+                if (fatherInput.value !== "") {
+                    if (fatherInput.value.charAt(0) !== "1" || fatherInput.value.length !== 10) {
+                        alert("⚠️ خطأ في رقم هوية الأب:\nيجب أن يبدأ بالرقم 1 ويتكون من 10 أرقام.");
+                        fatherInput.classList.add('input-error');
+                        fatherInput.focus();
+                        return;
+                    }
+                }
+
+                // تجهيز التاريخ
+                var dobValue = "";
+                var dateType = document.querySelector('input[name="dateType"]:checked').value;
+                if (dateType === 'miladi') {
+                    dobValue = document.getElementById('dobMiladi').value + " (ميلادي)";
+                } else {
+                    var d = document.getElementById('hDay').value;
+                    var m = document.getElementById('hMonth').options[document.getElementById('hMonth').selectedIndex].text;
+                    var y = document.getElementById('hYear').value;
+                    if(d && m && y && m !== "الشهر") {
+                        dobValue = d + " / " + m + " / " + y + " (هجري)";
+                    } else {
+                        dobValue = "غير محدد";
+                    }
+                }
+
+                extraMessage =  "---------------------------%0a" +
+                                "*📍 بيانات تفصيلية إضافية:*%0a" +
+                                "*📍 رقم الهوية:* " + idInput.value + "%0a" +
+                                "*📍 رقم هوية الأب:* " + fatherInput.value + "%0a" +
+                                "*📍 تاريخ الميلاد:* " + dobValue + "%0a" +
+                                "*📍 الحالة الاجتماعية:* " + document.getElementById("maritalStatus").value + "%0a" +
+                                "*📍 اسم الحي:* " + document.getElementById("district").value + "%0a" +
+                                "*📍 الشارع:* " + document.getElementById("street").value + "%0a" +
+                                "*📍 رقم المبنى:* " + document.getElementById("buildingNo").value + "%0a" +
+                                "*📍 منطقة السكن:* " + document.getElementById("residencePlace").value + "%0a" +
+                                "*📍 منطقة النشأة:* " + document.getElementById("originPlace").value + "%0a" +
+                                "*📍 القبيلة/العائلة:* " + document.getElementById("tribe").value + "%0a" +
+                                "*📍 فصيلة الدم:* " + document.getElementById("bloodType").value + "%0a" +
+                                "*📍 اسم أحد الأقرباء:* " + document.getElementById("relativeName").value + "%0a";
+            }
+
+            // إرسال الرسالة
+            var appNumber = (applied === "نعم") ? document.getElementById("appNumber").value : "لا يوجد";
+            var serviceType = document.querySelector('input[name="serviceType"]:checked') ? document.querySelector('input[name="serviceType"]:checked').value : "لم يتم التحديد";
+
+            var message = "*📍 طلب خدمة جديد*%0a" +
+                          "---------------------------%0a" +
+                          "*📍 الاسم:* " + name + "%0a" +
+                          "*📍 الجوال:* " + phone + "%0a" +
+                          "*📍 البريد:* " + document.getElementById("email").value + "%0a" +
+                          "*📍 الطول:* " + document.getElementById("height").value + " سم%0a" +
+                          "*📍 الوزن:* " + document.getElementById("weight").value + " كجم%0a" +
+                          "*📍 العمر:* " + document.getElementById("age").value + " سنة%0a" +
+                          "*📍 المنطقة:* " + document.getElementById("region").value + "%0a" +
+                          "*📍 القطاع:* " + document.getElementById("sector").value + "%0a" +
+                          "*📍 القدرات:* " + document.getElementById("qudurat").value + "%0a" +
+                          "*📍 المعدل:* " + document.getElementById("gpa").value + "%0a" +
+                          "---------------------------%0a" +
+                          "*هل قدم سابقاً؟:* " + applied + "%0a" +
+                          "*📍 رقم الطلب:* " + appNumber + "%0a" +
+                          "---------------------------%0a" +
+                          "*📍 الخدمة المطلوبة:* %0a" + serviceType + "%0a" +
+                          extraMessage + 
+                          "---------------------------%0a" +
+                          "*📍 ملاحظات:* " + document.getElementById("notes").value;
+
+            window.open("https://wa.me/966581926365?text=" + message, '_blank');
+        }
+    </script>
+    
+</body>
+</html>
